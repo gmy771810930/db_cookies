@@ -24,6 +24,7 @@ except:
     conf.read("config.ini", encoding="utf-8")
 
 db_sites = conf.get("javdb", "sites").split(",")
+db_sites.append("")
 
 BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Google/Chrome/User Data"
 # BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Vivaldi/User Data"
