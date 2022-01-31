@@ -27,7 +27,7 @@ db_sites = conf.get("javdb", "sites").split(",")
 db_sites.append("")
 
 BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Google/Chrome/User Data"
-# BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Vivaldi/User Data"
+# BROWSER_PROFILE_PATH = os.getenv("APPDATA") + "/../Local/Microsoft/Edge/User Data"
 
 # Copy Cookies and Local State to current folder
 for i in db_sites:
